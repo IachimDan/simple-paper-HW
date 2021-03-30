@@ -1,0 +1,77 @@
+body {
+    background-color: #333;
+}
+
+div {
+    border: 3 px solid #777;
+    box-sizing: border-box;
+}
+
+.paper {
+    width: 700px;
+    margin: 20px auto;
+}
+
+.paper .clear{
+    clear:both;
+}
+
+.paper .photo {
+    background-image: url(https://i.picsum.photos/id/157/700/700.jpg?hmac=rst4yq-bjBR30QTa_zUoQIAfYRTnrPwr8nXtzG7FhZA);
+    width: 700px;
+    height: 700px;
+    box-sizing: border-box;
+    border: 20px solid white;
+}
+.paper .photo .gradient-shadow {
+
+    width: 660px;
+    height: 660px;
+
+    background-image: 
+        linear-gradient(
+           90deg, #0005, #fffd,#0005
+        );
+}
+
+.paper .shadow-top-left,
+.paper .shadow-top-right,
+.paper .shadow-bottom-left,
+.paper .shadow-bottom-right {
+    height: 20px;
+    width: 350px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.paper .shadow-top-left {
+    transform: translateY(30px) rotate(3deg);
+    box-shadow: 15px -10px 15px 10px #171717;
+
+    position: relative;
+    z-index: -1;
+}
+
+.paper .shadow-top-right {
+    transform: translateY(30px) rotate(-3deg);
+    box-shadow: -15px -10px 15px 10px #171717;
+
+    position: relative;
+    z-index: -1;
+}
+
+.paper .shadow-bottom-left {
+    transform: translateY(-30px) rotate(-3deg);
+    box-shadow: 15px 10px 15px 10px #171717;
+
+    position: relative;
+    z-index: -1;
+}
+
+.paper .shadow-bottom-right {
+    transform: translateY(-30px) rotate(3deg);
+    box-shadow: -15px 10px 15px 10px #171717;
+
+    position: relative;
+    z-index: -1;
+}   
